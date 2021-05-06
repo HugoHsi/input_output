@@ -1,6 +1,12 @@
-let button = document.querySelector(".button");
+document.querySelectorAll('.button').forEach((button) => {
+    button.addEventListener('mouseover', handler);
+    button.addEventListener('mouseout', handler);
+});
 
-let bg = document.querySelector(".bg");
+document.querySelectorAll('.bg').forEach((bg) => {
+    bg.addEventListener('mouseover', handler);
+    bg.addEventListener('mouseout', handler);
+});
 
 function addHv() {
   bg.classList.add("hv");
