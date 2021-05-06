@@ -1,21 +1,26 @@
-let button = document.querySelector(".button");
+let button = document.querySelectorAll(".button");
 
-let bg = document.querySelector(".bg");
+let bg = document.querySelectorAll(".bg");
 
-function addHv() {
-  bg.classList.add("hv");
+for (let i = 0; i < button.length; i++) {
+  button[i].addEventListener("mouseover", function () {
+    console.log("test");
+    bg[i-1].classList.add('hv')
+  });
 }
 
-function remHv() {
-  bg.classList.remove("hv");
+for (let i = 0; i < button.length; i++) {
+  button[i].addEventListener("mouseout", function () {
+    console.log("test");
+    bg[i-1].classList.remove('hv')
+  });
 }
 
-document.querySelectorAll('.button').forEach((button) => {
-    button.addEventListener('mouseover', addHv);
-    button.addEventListener('mouseout', remHv);
-});
+//function addHv() {
+ // document.querySelectorAll('.button').forEach((button) => bg.classList.add('hv'));
+//}
 
-document.querySelectorAll('.bg').forEach((bg) => {
-    bg.addEventListener('mouseover', addHv);
-    bg.addEventListener('mouseout', remHv);
-});
+//function remHv() {
+ // document.querySelectorAll('.button').forEach((button) => bg.classList.remove('hv'));
+//}
+

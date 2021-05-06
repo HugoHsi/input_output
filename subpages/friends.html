@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Encouragement Generator</title>
+
+    <!-- add reset to create consistency between browsers and devices. -->
+    <link rel="stylesheet" type="text/css" href="../reset.css" />
+
+    <link rel="stylesheet" type="text/css" href="../main.css" />
+
+    <!-- add link to your javascript. be sure it includes "defer" -->
+    <script type="text/javascript" src="../script.js" defer></script>
+    <script type="text/javascript" src="./javascript/friends.js" defer></script>
+  </head>
+
+  <body>
+    <h1>what's bothering you?</h1>
+
+    <div class="selectors">
+      <div class="button height-fix">
+        <p class="text">.</p>
+        <div class="bg-selected"></div>
+      </div>
+
+      <a href="./personal.html">
+        <div class="button">
+          <p class="text">personal</p>
+          <div class="bg"></div>
+        </div>
+      </a>
+
+      <a href="./family.html">
+        <div class="button">
+          <p class="text">family</p>
+          <div class="bg"></div>
+        </div>
+      </a>
+
+      <a href="./friends.html">
+        <div class="button-selected">
+          <p class="text selected">friends</p>
+          <div class="bg-selected"></div>
+        </div>
+      </a>
+
+      <a href="./school.html">
+        <div class="button">
+          <p class="text">school</p>
+          <div class="bg"></div>
+        </div>
+      </a>
+
+      <a href="./work.html">
+        <div class="button">
+          <p class="text">work</p>
+          <div class="bg"></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="bottom-container">
+      <div id="myRandomDiv"></div>
+    </div>
+
+    <a id="myButton" href="#">
+      <div class="bot-but">
+        <div class="button">
+          <p class="text">give me some advice</p>
+          <div class="bg"></div>
+        </div>
+      </div>
+    </a>
+  </body>
+</html>
