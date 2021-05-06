@@ -8,10 +8,14 @@
   src: url(./assets/Bitter-Regular.woff2);
 }
 
-
+.selectors {
+    display: flex;
+    flex-direction: row;
+}
 
 .button {
     width: fit-content;
+    padding: 3rem;
   }
   
   .bg {
